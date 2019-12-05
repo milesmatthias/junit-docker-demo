@@ -1,6 +1,13 @@
 package hello;
-  public class Greeter {
-    public String sayHello() {
-      return "Hello world!";
-    }
+
+public class Greeter {
+	String greeting;
+
+	public Greeter(String greeting) {
+		this.greeting = greeting;
+	}
+
+	public String sayHello() {
+		return this.greeting;
+	}
  }

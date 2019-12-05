@@ -13,5 +13,5 @@ release: .image
   docker push $(IMG):latest
   docker push $(IMG):$(SHA)
 
-test: .image
-	docker run $(IMG):latest --entrypoint "java -jar /app/helloworld.jar"
+test:
+	docker build -f Dockerfile_test .

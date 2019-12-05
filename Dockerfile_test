@@ -1,0 +1,5 @@
+FROM gradle:5.5.1
+
+ADD . /home/gradle/project
+WORKDIR /home/gradle/project
+RUN gradle test
